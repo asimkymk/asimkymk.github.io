@@ -1,0 +1,158 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #12263A;
+
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #F4EDEA
+}
+
+a:hover {
+    color: #F4D1AE;
+    transition: color 0.45s ease-in-out;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.sol-panel {
+    background-color: #12263A;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 450px;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    padding: 1rem;
+
+
+}
+li{
+    padding-bottom: 12px;
+}
+
+.mobil-ust-panel {
+    display: none;
+}
+
+.profile-img {
+    border-radius: 100px;
+    height: 200px;
+    margin-top: 150px;
+    margin-bottom: 12px;
+    transition: border-radius 0.75s ease-in-out;
+}
+.profile-img:hover{
+    border-radius: 4px;
+    transition: border-radius 0.75s ease-in-out;
+}
+
+.menu {
+    margin-top: 85px;
+    list-style-type: none;
+}
+
+ul li a {
+    font-size: 24px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.ana-panel {
+
+    flex-direction: column;
+    padding: 1.5rem;
+
+
+}
+
+.hakkimda-panel {
+    
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.hakkimda-text{
+    padding-top:200px;
+    font-size: 86px;
+}
+
+
+.social-link {
+    color: #12263A;
+    font-size: 62px;
+}
+
+.social-link:hover {
+    color: #F4D1AE;
+    transition: color 0.45s ease-in-out;
+}
+
+.cizgi {
+    border-bottom: #12263A 3px solid;
+    margin-bottom: 10px
+}
+
+.item {
+    margin-bottom: 50px;
+}
+
+@media (max-width: 575.98px) {
+    .sol-panel {
+        height: auto;
+        width: 100vw;
+        display: block;
+        position: relative;
+
+    }
+    .sol-panel ul {
+        display: none;
+    }
+
+    .ana-panel {
+        margin: 0;
+    }
+
+    .hakkimda-panel {
+        padding: 0;
+        margin: 18px 0;
+        height: auto;
+    }
+
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hakkimda-text{
+        padding-top:0px;
+        font-size:54px;
+    }
+
+
+    .profile-img {
+        margin-top: 12px;
+    }
+
+}
+@media (max-width: 830px) {
+    
+
+    .hakkimda-panel {
+        height: auto;
+    }
+
+}
